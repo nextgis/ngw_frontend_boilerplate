@@ -23,5 +23,6 @@
     "baseUrl": "https://webgis.data4.solutions",
     "resources": [
         {"resourceId": 766, "id": "webmap", "fit": true, "selectable": true}
-    ]
+    ],
+    "selectedPaint": {"color": "orange", "stroke": true, "fillOpacity": 0.5}
   }

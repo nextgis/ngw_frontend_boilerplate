@@ -58,7 +58,7 @@ const info = function (item) {
         id: 'highlight',
         data: geojson,
         visibility: true,
-        paint: { color: 'red', stroke: true, fillOpacity: '0.5' }
+        paint: config.selectedPaint || { color: 'red', stroke: true, fillOpacity: '0.5' }
       });
       console.log(selected);
     });
