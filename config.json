@@ -1,0 +1,14 @@
+{
+    "center": [9.993682, 53.551086],
+    "zoom": 12,
+    "controls": ["ZOOM", "ATTRIBUTION"],
+    "controlsOptions": {
+      "ZOOM": "top-left"
+    },
+    "qmsId": [487, "basemap"],
+
+    "baseUrl": "https://demo.nextgis.com",
+    "ngwResources": [
+        {"resourceId": 1738, "id": "demo_webmap", "fit": true}
+    ]
+  }
