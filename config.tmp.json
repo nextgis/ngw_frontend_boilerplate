@@ -1,0 +1,27 @@
+{
+    "center": [9.993682, 53.551086],
+    "zoom": 12,
+    "controls": ["ZOOM", "ATTRIBUTION", "LEGEND", "LOGO"],
+    "controlsOptions": {
+      "ZOOM": {"position": "top-left"},
+      "LOGO": {
+        "position": "bottom-right", 
+        "width": "64px",
+        "height": "64px",
+        "href": "https://data4.solutions/",
+        "src": "https://webgis.data4.solutions/static/005c23c6267e845b13191ebe6a22d718/asset/img/logo_outline.png"
+      },
+      "LEGEND": {
+        "position": "bottom-left", 
+        "width": "150px",
+        "height": "200px",
+        "src": "https://webgis.data4.solutions/static/005c23c6267e845b13191ebe6a22d718/asset/img/logo_outline.png"
+      }
+    },
+    "qmsId": [487, "basemap"],
+
+    "baseUrl": "https://webgis.data4.solutions",
+    "resources": [
+        {"resourceId": 766, "id": "webmap", "fit": true, "selectable": true}
+    ]
+  }

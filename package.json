@@ -11,8 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@nextgis/leaflet-map-adapter": "^0.15.4",
-    "@nextgis/ngw-map": "^0.15.4"
+    "@nextgis/leaflet-map-adapter": "^0.15.5",
+    "@nextgis/ngw-map": "^0.15.5"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.3"
