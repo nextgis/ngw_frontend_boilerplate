@@ -18,6 +18,8 @@ vim ./config.json
 npm install
 # for development run
 npm start
+# or 
+npm start -- --https
 # for production
 npm run prod
 ```
