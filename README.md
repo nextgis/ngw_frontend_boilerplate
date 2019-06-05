@@ -2,9 +2,12 @@
 
 WebGIS application builder based on NextGIS frontend libraries
 
-NextGIS Frontend: 
- - [Documentation/Api](http://code.nextgis.com)
- - [GitHub](https://github.com/nextgis/nextgisweb_frontend)
+## Developer dependencies
+
+- [Node.js](https://nodejs.org/en/)
+- NextGIS Frontend:
+  - [Documentation/Api](http://code.nextgis.com)
+  - [GitHub](https://github.com/nextgis/nextgisweb_frontend)
 
 ## Usage
 
@@ -28,4 +31,4 @@ npm run static
 
 ## Example
 
-![](http://m-d.me/img/ss/20190604_163715.png)
+![example-image](http://m-d.me/img/ss/20190604_163715.png)
