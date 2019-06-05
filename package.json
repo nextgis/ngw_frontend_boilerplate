@@ -1,20 +1,25 @@
 {
   "name": "ngw_frontend_boilerplate",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "src/index.html",
   "scripts": {
     "start": "parcel src/index.html -p 8080 --open",
-    "prod": "parcel build src/index.html"
+    "prod": "parcel build src/index.html",
+    "static": "parcel build src/index.html --public-url ./"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "NextGIS",
   "dependencies": {
     "@nextgis/leaflet-map-adapter": "^0.15.5",
     "@nextgis/ngw-map": "^0.15.5"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.3"
+  },
+  "license": "LGPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nextgis/ngw_frontend_boilerplate.git"
   }
 }

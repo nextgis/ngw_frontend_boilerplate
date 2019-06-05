@@ -16,12 +16,14 @@ cp ./config.tmp.json ./config.json
 #  then edit
 vim ./config.json
 npm install
-# for development run
+# for development run and open http://localhost:8080
 npm start
-# or 
+# https://localhost:8080
 npm start -- --https
 # for production
 npm run prod
+# to open dist/index.html in browser as static app run
+npm run static
 ```
 
 ## Example
