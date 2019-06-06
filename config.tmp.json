@@ -1,28 +1,53 @@
 {
-    "center": [9.993682, 53.551086],
-    "zoom": 12,
-    "controls": ["ZOOM", "ATTRIBUTION", "LEGEND", "LOGO"],
-    "controlsOptions": {
-      "ZOOM": {"position": "top-left"},
-      "LOGO": {
-        "position": "bottom-right", 
-        "width": "64px",
-        "height": "64px",
-        "href": "https://data4.solutions/",
-        "src": "https://webgis.data4.solutions/static/005c23c6267e845b13191ebe6a22d718/asset/img/logo_outline.png"
-      },
-      "LEGEND": {
-        "position": "bottom-left", 
-        "width": "150px",
-        "height": "200px",
-        "src": "https://webgis.data4.solutions/static/005c23c6267e845b13191ebe6a22d718/asset/img/logo_outline.png"
-      }
+  "center": [
+    9.993682,
+    53.551086
+  ],
+  "zoom": 12,
+  "controls": [
+    "ZOOM",
+    "ATTRIBUTION",
+    "LOGO",
+    "legend",
+    "INFO"
+  ],
+  "controlsOptions": {
+    "ZOOM": {
+      "position": "top-left"
     },
-    "qmsId": [487, "basemap"],
-
-    "baseUrl": "https://webgis.data4.solutions",
-    "resources": [
-        {"resourceId": 766, "id": "webmap", "fit": true, "selectable": true}
-    ],
-    "selectedPaint": {"color": "orange", "stroke": true, "fillOpacity": 0.5}
+    "LOGO": {
+      "position": "bottom-right",
+      "width": "20px",
+      "height": "20px",
+      "href": "https://data4.solutions/",
+      "src": "https://webgis.data4.solutions/static/005c23c6267e845b13191ebe6a22d718/asset/img/logo_outline.png"
+    },
+    "INFO": {
+      "position": "bottom-right"
+    },
+    "legend": {
+      "control": "COLLAPSIBLE_PANEL",
+      "position": "bottom-right",
+      "btnHtml": "<i class='material-icons'>style</i>",
+      "html": "<img src='https://webgis.data4.solutions/static/005c23c6267e845b13191ebe6a22d718/asset/img/logo_outline.png'/>"
+    }
+  },
+  "qmsId": [
+    487,
+    "basemap"
+  ],
+  "baseUrl": "https://webgis.data4.solutions",
+  "resources": [
+    {
+      "resourceId": 766,
+      "id": "webmap",
+      "fit": true,
+      "selectable": false
+    }
+  ],
+  "selectedPaint": {
+    "color": "orange",
+    "stroke": true,
+    "fillOpacity": 0.5
   }
+}
