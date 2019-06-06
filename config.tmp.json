@@ -6,7 +6,6 @@
   "zoom": 12,
   "controls": [
     "ZOOM",
-    "ATTRIBUTION",
     "LOGO",
     "legend",
     "INFO"
