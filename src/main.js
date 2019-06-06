@@ -5,9 +5,12 @@ import NgwMap from '@nextgis/ngw-map';
 import MapAdapter from '@nextgis/leaflet-map-adapter';
 
 import config from '../config.json';
+import { version } from '../package.json';
 import { ImagePanelControl } from './components/ImagePanelControl/ImagePanelControl';
 import { PanelControl } from './components/PanelControl/PanelControl';
 import { CollapsiblePanelControl } from './components/CollapsiblePanelControl/CollapsiblePanelControl';
+
+window.version = version;
 
 // install custom controls
 NgwMap.controls.LOGO = (webMap, options) => {

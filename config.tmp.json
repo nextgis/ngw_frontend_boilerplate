@@ -7,8 +7,8 @@
   "controls": [
     "ZOOM",
     "LOGO",
-    "legend",
-    "INFO"
+    "INFO",
+    "legend"
   ],
   "controlsOptions": {
     "ZOOM": {
