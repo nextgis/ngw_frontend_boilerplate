@@ -13,10 +13,15 @@
   "qmsId": [487, "basemap"],
 
   "zoom": 12,
-  "controls": ["ZOOM", "ATTRIBUTION", "LOGO", "legend"],
+  "controls": ["ZOOM", "SCALE", "ATTRIBUTION", "LOGO", "legend"],
   "controlsOptions": {
     "ZOOM": {
       "position": "top-left"
+    },
+    "SCALE": {
+      "position": "bottom-right",
+      "metric": true,
+      "imperial": false
     },
     "LOGO": {
       "position": "bottom-right",

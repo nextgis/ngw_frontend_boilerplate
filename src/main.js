@@ -1,6 +1,8 @@
 import 'leaflet/dist/leaflet.css';
 import './main.css';
 
+import L from 'leaflet';
+
 import NgwMap from '@nextgis/ngw-map';
 import MapAdapter from '@nextgis/leaflet-map-adapter';
 
@@ -13,6 +15,8 @@ import { CollapsiblePanelControl } from './components/CollapsiblePanelControl/Co
 window.version = version;
 
 // install custom controls
+MapAdapter.controlAdapters.SCALE = L.Control.Scale;
+
 NgwMap.controls.LOGO = (webMap, options) => {
   return webMap.createControl(new ImagePanelControl(options), { margin: true })
 };
