@@ -1,0 +1,71 @@
+.ngw-control-layers-toggle {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+/* layers control */
+
+.ngw-control-layers {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.ngw-control-layers-toggle {
+    width: 36px;
+    height: 36px;
+}
+
+.leaflet-retina .ngw-control-layers-toggle {
+    background-size: 26px 26px;
+}
+
+.leaflet-touch .ngw-control-layers-toggle {
+    width: 44px;
+    height: 44px;
+}
+
+.ngw-control-layers .ngw-control-layers-list, .ngw-control-layers-expanded .ngw-control-layers-toggle {
+    display: none;
+}
+
+.ngw-control-layers-expanded .ngw-control-layers-list {
+    display: block;
+    position: relative;
+}
+
+.ngw-control-layers-expanded {
+    padding: 6px 10px 6px 6px;
+    color: #333;
+    background: #fff;
+    overflow: auto;
+}
+
+.ngw-control-layers-scrollbar {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 5px;
+}
+
+.ngw-control-layers-selector {
+    margin-top: 2px;
+    position: relative;
+    top: 1px;
+}
+
+.ngw-control-layers label {
+    display: block;
+}
+
+.ngw-control-layers-separator {
+    height: 0;
+    border-top: 1px solid #ddd;
+    margin: 5px -10px 5px -6px;
+}
+
+.ngw-control-layers .material-icons {
+    line-height: 30px!important;
+    color: gray;
+}

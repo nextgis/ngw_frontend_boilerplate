@@ -1,15 +1,46 @@
 import 'leaflet/dist/leaflet.css';
+import './main.css';
 
 import NgwMap from '@nextgis/ngw-map';
 import MapAdapter from '@nextgis/leaflet-map-adapter';
 
 import config from '../config.json';
-import { ImagePanelControl } from './components/ImagePanelControl/ImagePanelControl.js';
-import { LegendPanelControl } from './components/LegendPanelControl/LegendPanelControl.js';
+import { ImagePanelControl } from './components/ImagePanelControl/ImagePanelControl';
+import { PanelControl } from './components/PanelControl/PanelControl';
+import { CollapsiblePanelControl } from './components/CollapsiblePanelControl/CollapsiblePanelControl';
 
 // install custom controls
-MapAdapter.controlAdapters.LOGO = ImagePanelControl;
-MapAdapter.controlAdapters.LEGEND = LegendPanelControl;
+NgwMap.controls.LOGO = (webMap, options) => {
+  return webMap.createControl(new ImagePanelControl(options), { margin: true })
+};
+NgwMap.controls.PANEL = (webMap, options) => {
+  return webMap.createControl(new PanelControl(options), { bar: true })
+};
+NgwMap.controls.COLLAPSIBLE_PANEL = (webMap, options) => {
+  return webMap.createControl(new CollapsiblePanelControl(webMap, options), { bar: true })
+};
+
+NgwMap.controls.INFO = (webMap, options) => {
+
+  const attribution = webMap.getAttributions({ onlyVisible: false });
+  if (options.html) {
+    attribution.push(options.html);
+  }
+  attribution.push('<a href="http://nextgis.ru" target="_blank">©NextGIS</a>');
+  let html = '';
+  attribution.forEach((x) => {
+    html += `<span>${x}</span>`;
+  });
+  options.html = html;
+  options.className = 'ngw-control-attribution';
+  options = {
+    btnHtml: '<i class="material-icons">info</i>',
+    ...options
+  }
+  return webMap.createControl(new CollapsiblePanelControl(webMap, options), { bar: true })
+
+};
+
 
 const ngwMap = new NgwMap(new MapAdapter(), {
   target: 'map',

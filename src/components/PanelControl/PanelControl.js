@@ -1,8 +1,10 @@
-import './LegendPanelControl.css';
+import './PanelControl.css';
 
-import L from 'leaflet';
+export class PanelControl {
 
-export class LegendPanelControl extends L.Control {
+  constructor(options) {
+    this.options = options;
+  }
 
   onAdd() {
     this._container = this._createContainer();
@@ -11,7 +13,7 @@ export class LegendPanelControl extends L.Control {
 
   _createContainer() {
     const element = document.createElement('div');
-    element.className = 'ngw-control-legend leaflet-bar leaflet-control';
+    element.className = 'ngw-control-legend';
     element.style.width = this.options.width;
     element.style.height = this.options.height;
 

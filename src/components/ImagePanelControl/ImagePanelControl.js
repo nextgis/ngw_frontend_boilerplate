@@ -1,6 +1,8 @@
-import L from 'leaflet';
+export class ImagePanelControl {
 
-export class ImagePanelControl extends L.Control {
+  constructor(options){
+    this.options = options;
+  }
 
   onAdd() {
     this._container = this._createContainer();

@@ -1,0 +1,5 @@
+.ngw-control-layers-expanded.ngw-control-attribution span, .ngw-control-layers-expanded.ngw-control-attribution span a {
+    width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+}
