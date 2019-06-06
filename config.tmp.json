@@ -1,52 +1,37 @@
 {
-  "center": [
-    9.993682,
-    53.551086
+
+  "baseUrl": "https://demo.nextgis.com",
+  "resources": [
+      {
+        "resourceId": 464, 
+        "id": "webmap", 
+        "fit": true, 
+        "selectable": true
+      }
   ],
+
+  "qmsId": [487, "basemap"],
+
   "zoom": 12,
-  "controls": [
-    "ZOOM",
-    "LOGO",
-    "INFO",
-    "legend"
-  ],
+  "controls": ["ZOOM", "ATTRIBUTION", "LOGO", "legend"],
   "controlsOptions": {
     "ZOOM": {
       "position": "top-left"
     },
     "LOGO": {
       "position": "bottom-right",
-      "width": "20px",
-      "height": "20px",
-      "href": "https://data4.solutions/",
-      "src": "https://webgis.data4.solutions/static/005c23c6267e845b13191ebe6a22d718/asset/img/logo_outline.png"
-    },
-    "INFO": {
-      "position": "bottom-right"
+      "width": "64px",
+      "height": "64px",
+      "href": "http://code.nextgis.com/readme",
+      "src": "https://raw.githubusercontent.com/nextgis/nextgisweb_frontend/master/packages/demo/src/images/logo_96x96.png"
     },
     "legend": {
       "control": "COLLAPSIBLE_PANEL",
       "position": "bottom-right",
       "btnHtml": "<i class='material-icons'>style</i>",
-      "html": "<img src='https://webgis.data4.solutions/static/005c23c6267e845b13191ebe6a22d718/asset/img/logo_outline.png'/>"
+      "html": "<div>Legend block is empty</div>"
     }
   },
-  "qmsId": [
-    487,
-    "basemap"
-  ],
-  "baseUrl": "https://webgis.data4.solutions",
-  "resources": [
-    {
-      "resourceId": 766,
-      "id": "webmap",
-      "fit": true,
-      "selectable": false
-    }
-  ],
-  "selectedPaint": {
-    "color": "orange",
-    "stroke": true,
-    "fillOpacity": 0.5
-  }
+
+  "selectedPaint": {"color": "purple", "stroke": true, "fillOpacity": 0.5}
 }
