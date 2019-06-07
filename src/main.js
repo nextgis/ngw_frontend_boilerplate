@@ -1,6 +1,7 @@
 import 'leaflet/dist/leaflet.css';
 import './main.css';
 
+import 'babel-polyfill';
 import L from 'leaflet';
 
 import NgwMap from '@nextgis/ngw-map';
