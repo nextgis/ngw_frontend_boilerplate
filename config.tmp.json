@@ -1,5 +1,5 @@
 {
-
+  "#": "this comment, delete the first # character in the keys below to use the parameter",
   "baseUrl": "https://demo.nextgis.com",
   "resources": [
       {
@@ -11,15 +11,18 @@
   ],
 
   "qmsId": [487, "basemap"],
-
-  "zoom": 12,
-  "controls": ["ZOOM", "SCALE", "ATTRIBUTION", "INFO", "LOGO", "legend"],
+  "#auth": {"login": "", "password": ""},
+  "#center": [53, 64],
+  "#zoom": 16,
+  "maxZoom": 19,
+  "minZoom": 16,
+  "controls": ["ZOOM", "ATTRIBUTION", "SCALE", "LOGO", "INFO", "legend"],
   "controlsOptions": {
     "ZOOM": {
       "position": "top-left"
     },
     "SCALE": {
-      "position": "bottom-right",
+      "position": "bottom-left",
       "metric": true,
       "imperial": false
     },
@@ -33,9 +36,9 @@
     "INFO": {
       "position": "bottom-right",
        "width": "200px",
-       "height": "200px",
-       "btnHtml": "<div></div>",
-       "html": "<div></div>"
+       "height": "36px",
+       "#btnHtml": "",
+       "html": "<div> information </div>"
     },
     "legend": {
       "control": "COLLAPSIBLE_PANEL",
