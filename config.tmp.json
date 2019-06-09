@@ -1,5 +1,5 @@
 {
-  "#": "this comment, delete the first # character in the keys below to use the parameter",
+  "#": "this indicates a commented parameter, remove the first # character to activate the parameter",
   "baseUrl": "https://demo.nextgis.com",
   "resources": [
       {
