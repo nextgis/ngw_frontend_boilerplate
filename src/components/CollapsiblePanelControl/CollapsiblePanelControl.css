@@ -1,4 +1,4 @@
-.ngw-control-layers-toggle {
+.ngw-control-panel-toggle {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     display: block;
@@ -6,66 +6,73 @@
 
 /* layers control */
 
-.ngw-control-layers {
+.ngw-control-panel {
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
     background: #fff;
     border-radius: 5px;
     overflow: hidden;
 }
 
-.ngw-control-layers-toggle {
+.ngw-control-panel-toggle {
     width: 36px;
     height: 36px;
 }
 
-.leaflet-retina .ngw-control-layers-toggle {
+.leaflet-retina .ngw-control-panel-toggle {
     background-size: 26px 26px;
 }
 
-.leaflet-touch .ngw-control-layers-toggle {
+.leaflet-touch .ngw-control-panel-toggle {
     width: 44px;
     height: 44px;
 }
 
-.ngw-control-layers .ngw-control-layers-list, .ngw-control-layers-expanded .ngw-control-layers-toggle {
+.ngw-control-panel .ngw-control-panel-list, .ngw-control-panel-expanded .ngw-control-panel-toggle {
     display: none;
 }
 
-.ngw-control-layers-expanded .ngw-control-layers-list {
+.ngw-control-panel-expanded .ngw-control-panel-list {
     display: block;
     position: relative;
 }
 
-.ngw-control-layers-expanded {
+.ngw-control-panel-expanded {
     padding: 6px 10px 6px 6px;
     color: #333;
     background: #fff;
     overflow: auto;
 }
 
-.ngw-control-layers-scrollbar {
+.ngw-control-panel-scrollbar {
     overflow-y: scroll;
     overflow-x: hidden;
     padding-right: 5px;
 }
 
-.ngw-control-layers-selector {
+.ngw-control-panel-selector {
     margin-top: 2px;
     position: relative;
     top: 1px;
 }
 
-.ngw-control-layers label {
+.ngw-control-panel label {
     display: block;
 }
 
-.ngw-control-layers-separator {
+.ngw-control-panel-separator {
     height: 0;
     border-top: 1px solid #ddd;
     margin: 5px -10px 5px -6px;
 }
 
-.ngw-control-layers .material-icons {
-    line-height: 30px!important;
+.ngw-control-panel .material-icons {
+    line-height: 31px!important;
     color: gray;
+}
+
+/* THEMES */
+
+.ngw-control-panel-expanded.ngw-control-panel.info {
+    padding: 0 6px;
+    height: 31px;
 }

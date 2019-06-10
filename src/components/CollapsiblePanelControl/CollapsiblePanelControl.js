@@ -43,14 +43,14 @@ export class CollapsiblePanelControl {
 
   expand() {
     this._layersLink.style.display = 'none';
-    this._container.classList.add('ngw-control-layers-expanded');
+    this._container.classList.add('ngw-control-panel-expanded');
     this._section.style.height = null;
     var acceptableHeight = this._map.getSize().y - (this._container.offsetTop + 50);
     if (acceptableHeight < this._section.clientHeight) {
-      this._section.classList.add('ngw-control-layers-scrollbar');
+      this._section.classList.add('ngw-control-panel-scrollbar');
       this._section.style.height = acceptableHeight + 'px';
     } else {
-      this._section.classList.remove('ngw-control-layers-scrollbar');
+      this._section.classList.remove('ngw-control-panel-scrollbar');
     }
     const { width, height } = this.options;
     if (width) {
@@ -58,13 +58,14 @@ export class CollapsiblePanelControl {
     }
     if (height) {
       this._container.style.height = height;
+      this._container.style.lineHeight = height;
     }
     this.status = true;
     return this;
   }
 
   collapse() {
-    this._container.classList.remove('ngw-control-layers-expanded');
+    this._container.classList.remove('ngw-control-panel-expanded');
     this._layersLink.style.display = 'inherit';
     this._container.style.width = 'auto';
     this._container.style.height = 'auto';
@@ -74,7 +75,7 @@ export class CollapsiblePanelControl {
   }
 
   _initLayout() {
-    const className = 'ngw-control-layers';
+    const className = 'ngw-control-panel';
     const container = this._container = document.createElement('div');
     container.className = className + (this.options.className ? ' ' + this.options.className : '');
     const collapsed = this.options.collapsed;
