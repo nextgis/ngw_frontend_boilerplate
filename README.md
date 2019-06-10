@@ -9,6 +9,10 @@ WebGIS application builder based on NextGIS frontend libraries
   - [Documentation/Api](http://code.nextgis.com)
   - [GitHub](https://github.com/nextgis/nextgisweb_frontend)
 
+## Preparation
+
+1. If you don't have it yet - install for [Ubuntu](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions)
+
 ## Usage
 
 ```bash
