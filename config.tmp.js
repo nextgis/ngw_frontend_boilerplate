@@ -1,5 +1,10 @@
+
 module.exports = {
   "#": "this indicates a commented parameter, remove the first # character to activate the parameter",
+
+  "title": "My app title",
+  "favicon": "static/example_favicon.ico",
+
   "baseUrl": "https://demo.nextgis.com",
   "resources": [
       {
@@ -9,7 +14,6 @@ module.exports = {
         "selectable": true
       }
   ],
-
   "qmsId": [487, "basemap"],
   "#auth": {"login": "", "password": ""},
   "#center": [53, 64],
