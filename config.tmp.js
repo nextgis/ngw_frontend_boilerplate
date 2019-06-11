@@ -1,4 +1,4 @@
-{
+module.exports = {
   "#": "this indicates a commented parameter, remove the first # character to activate the parameter",
   "baseUrl": "https://demo.nextgis.com",
   "resources": [
