@@ -107,7 +107,8 @@ export class CollapsiblePanelControl {
 
     const link = this._layersLink = L.DomUtil.create('a', className + '-toggle', container);
     link.href = '#';
-    link.title = 'Collapsible panel';
+
+    link.title = this.options.btnTitle || 'Collapsible panel';
 
     this._appendHtml(link, this.options.btnHtml);
 
