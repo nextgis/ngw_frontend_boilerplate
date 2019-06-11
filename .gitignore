@@ -16,5 +16,9 @@ yarn-debug.log*
 yarn-error.log*
 tmp
 
+src/static/*
+!src/static/.gitkeep
+!src/static/example_favicon.ico
+
 config.json
 config.js

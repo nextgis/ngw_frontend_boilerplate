@@ -35,6 +35,10 @@ npm run prod
 npm run static
 ```
 
+## Serve static
+
+Put your static files (png, jpg, ico etc.) in the `src/statics` directory then call to then turn through html, css or some specific config properties like `favicon`
+
 ## Example
 
 ![example-image](http://m-d.me/img/ss/20190604_163715.png)

@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>NextGIS Frontend boilerplate</title>
+    <title>{{ title ? title : 'NextGIS Frontend boilerplate' }}</title>
+
+    <if condition="favicon">
+         <link rel="shortcut icon" href={{favicon}} type="image/x-icon">
+    </if>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
