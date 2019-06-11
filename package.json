@@ -1,13 +1,13 @@
 {
   "name": "ngw_frontend_boilerplate",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "",
   "main": "index.html",
   "scripts": {
     "clean": "rimraf ./dist/*",
     "start": "parcel src/index.html -p 8080 --open",
-    "prod": "npm run clean && parcel build src/index.html",
-    "static": "npm run clean && parcel build src/index.html --public-url ./"
+    "prod": "npm run clean && parcel build src/index.html --no-cache",
+    "static": "npm run clean && parcel build src/index.html --public-url ./ --no-cache"
   },
   "keywords": [],
   "author": "NextGIS",
