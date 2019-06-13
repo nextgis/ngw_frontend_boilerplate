@@ -12,8 +12,8 @@
   "keywords": [],
   "author": "NextGIS",
   "dependencies": {
-    "@nextgis/leaflet-map-adapter": "^0.15.7",
-    "@nextgis/ngw-map": "^0.15.8"
+    "@nextgis/leaflet-map-adapter": "^0.15.9",
+    "@nextgis/ngw-map": "^0.15.9"
   },
   "devDependencies": {
     "babel-polyfill": "^6.26.0",
